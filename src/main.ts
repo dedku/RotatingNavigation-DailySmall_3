@@ -28,3 +28,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </ul>
   </nav>
 `
+
+const open = document.getElementById('open') as HTMLDivElement
+const close = document.getElementById('close') as HTMLDivElement
+const container = document.querySelector('.container') as Element | null
+
+open?.addEventListener('click', () => container?.classList.add('show-nav'))
+close?.addEventListener('click', () => container?.classList.remove('show-nav'))

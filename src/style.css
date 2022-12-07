@@ -40,6 +40,9 @@ body {
   transition: transform .5s linear;
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
 
 .circle button {
   position: absolute;
@@ -81,13 +84,15 @@ nav {
 nav ul {
   list-style-type: none;
   padding-left: 2rem;
+  transform: rotate(20deg);
+
 }
 
 nav ul li {
   text-transform: uppercase;
   color: #fff;
   margin: 4rem 0;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   transition: transform .4s ease-in;
 }
 
@@ -98,12 +103,12 @@ nav ul li i {
 
 nav ul li+li {
   margin-left: 1.5 rem;
-  transform: translateX(-150%);
+  transform: translateX(-180%);
 }
 
 nav ul li+li+li {
   margin-left: 3 rem;
-  transform: translateX(-200%);
+  transform: translateX(-160%);
 }
 
 .content {
